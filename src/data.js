@@ -16,6 +16,18 @@ export const words = (data) => {
 
 };
 
+// Calcular
+// let baseDamage = Object.values(data.pokemon);
+
+// function computeStats(data.pokemon) {
+//   for (let i = 0; i < pokemon.length; i++) {
+//     let higherDamage = pokemon[i].base-damage>100;
+//   }
+//   return higherDamage;
+//   console.log(higherDamage);
+  
+// }
+
 
 
 // export const anotherExample = () => {

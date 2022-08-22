@@ -11,17 +11,26 @@ function visualizardata(datos) {
         let contenedor = document.querySelector(".contenedor")
         let infopokemon = document.createElement("div");
         contenedor.appendChild(infopokemon)
+        infopokemon.className = "contenedorpokemon"
         infopokemon.innerHTML =
             `
-            <div class= "imagen"> 
-            <img src = "${imagenpokemon}">
-            
-            </div>
+        
+        <div class= "contenedorimagen"> 
+        <img class="imagen" src = "${imagenpokemon}">
+        </div>
+        <div class= "names"
+        <"${namepokemon}">
+        
+        
+        
         <p> ${namepokemon}</p>
+        </div>
         
         `
-        
+
+
     }
+
 
     //console.log ( pokemon.data)
     console.log(words(pokemon))
