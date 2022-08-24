@@ -45,6 +45,21 @@ export const filterdata =(data, parameter) => {
 
 }
 
+//funcion filtar
+
+export let filterTypePokemon = function(typeElement){
+  let elements = dataPokemon.pokemon.filter((pokemon) =>  {
+      return pokemon.type.indexOf(typeElement) != -1;
+  });
+  
+  if (typeElement === "all") {
+  elements = dataPokemon.pokemon 
+  } 
+  
+  
+  return elements; 
+}
+
 // Calcular
 // let baseDamage = Object.values(data.pokemon);
 
