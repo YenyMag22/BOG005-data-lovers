@@ -4,7 +4,9 @@ import data from './data/pokemon/pokemon.js';
 //funcion visualizar data en navegador//
 let pokemon = Object.values(data.pokemon);
 
+
 function visualizardata(pokemon) {
+
     for (let i = 0; i < pokemon.length; i++) {
         let namepokemon = pokemon[i].name;
         let imagenpokemon = pokemon[i].img;
@@ -23,7 +25,9 @@ function visualizardata(pokemon) {
         </div>
         `
     }
+
     OrderNamesPokemon()
+
 }
 //Funcion Ordenar data AZ-ZA//
 function OrderNamesPokemon() {
@@ -51,17 +55,12 @@ function OrderNamesPokemon() {
 // console.log(orderdata(data.pokemon))
 window.addEventListener("load", visualizardata(pokemon))
 
-//ESTO ES UN OBJETO  const data = {
-//     pokemon:{
-//         nombre:pikachu,
-//         edad:"3 años"
-//     },
 
-// }
 
-// function suma(a,b) {
-//     return a+b
-// }
-//suma(3,4)
+function OrderAZNames() {
 
-//[ ]gfgfd
+}
+let OrderNamesAZ = document.getElementById("Order NamesAZ");
+OrderNamesAZ.addEventListener("click", OrderAZNames);
+//let OrderNamesZA = document.getElementById("Order NamesZA");
+//OrderNamesAZ.addEventListener("click", OrderAZNames);
