@@ -1,9 +1,10 @@
 // estas funciones son de ejemplo
 //funcion ( export )
-export const words = (data) => {
+export const orderdata = (data) => {
   //return 'data';
   //funcion ordenar nombres de la  data alfabeticamente
-  let order = data.sort((a, b) => {
+  let copydata=[...data]
+  copydata.sort((a, b) => {
     if (a.name == b.name) {
       return 0;
     }
@@ -12,8 +13,7 @@ export const words = (data) => {
     }
     return 1;
   });
-  return order
-
+  return copydata
 };
 
 // Calcular
