@@ -1,10 +1,24 @@
 import { orderdataAZ, orderdataZA } from './data.js'
 import data from './data/pokemon/pokemon.js';
 
+//Nuevo 26-08 Mostrar pantalla de inicio
+
+const buttonNavigation = document.getElementById("pantalla1")
+
+buttonNavigation.addEventListener("click", () => {
+    const pag1 = document.getElementById("Pag1")
+    const pag2 = document.getElementById("Pag2")
+    pag1.style.display = "none";
+    pag2.style.display = "block";
+
+})
+
 //funcion visualizar data en navegador//
 let pokemon = Object.values(data.pokemon);
 
+
 function visualizardata(pokemon) {
+
     for (let i = 0; i < pokemon.length; i++) {
         let namepokemon = pokemon[i].name;
         let imagenpokemon = pokemon[i].img;
@@ -23,7 +37,9 @@ function visualizardata(pokemon) {
         </div>
         `
     }
+
     OrderNamesPokemon()
+
 }
 //Funcion Ordenar data AZ-ZA//
 function OrderNamesPokemon() {
@@ -51,17 +67,5 @@ function OrderNamesPokemon() {
 // console.log(orderdata(data.pokemon))
 window.addEventListener("load", visualizardata(pokemon))
 
-//ESTO ES UN OBJETO  const data = {
-//     pokemon:{
-//         nombre:pikachu,
-//         edad:"3 años"
-//     },
 
-// }
 
-// function suma(a,b) {
-//     return a+b
-// }
-//suma(3,4)
-
-//[ ]gfgfd

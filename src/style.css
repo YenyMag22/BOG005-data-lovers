@@ -61,7 +61,7 @@ header img {
 #typesPokemon,
 #damagePokemon {
     text-align: center;
-    background: rgb(234, 251, 102);
+    background: rgb(228, 255, 24);
     color: black;
     width: 15rem;
     font-family: Arial, Helvetica, sans-serif;
@@ -131,4 +131,17 @@ header img {
         width: 15rem;
 
     }
+}
+
+#Pag1 {
+
+    background-color: aquamarine;
+    text-align: center;
+    display: block;
+
+}
+
+#Pag2 {
+
+    display: none;
 }
