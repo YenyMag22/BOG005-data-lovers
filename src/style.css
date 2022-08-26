@@ -15,7 +15,7 @@ main {
     justify-content: center;
     width: 100%;
     padding: 10px 0px 10px 0px;
-    /* gap: 2rem; */
+
 }
 
 .contenedorpokemon {
@@ -86,6 +86,7 @@ header img {
     width: 80%;
 }
 
+/* Aplicando Quarys Selectors para tablet */
 @media (min-width: 760px) {
 
     header img {
@@ -115,6 +116,8 @@ header img {
         margin: 2.5rem 1rem 2.5rem 1rem;
     }
 }
+
+/* Aplicando Quarys Selectors para Laptop */
 
 @media (min-width: 1020px) {
 
