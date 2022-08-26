@@ -1,6 +1,18 @@
 import { orderdataAZ, orderdataZA } from './data.js'
 import data from './data/pokemon/pokemon.js';
 
+//Nuevo 26-08 Mostrar pantalla de inicio
+
+const buttonNavigation = document.getElementById("pantalla1")
+
+buttonNavigation.addEventListener("click", () => {
+    const pag1 = document.getElementById("Pag1")
+    const pag2 = document.getElementById("Pag2")
+    pag1.style.display = "none";
+    pag2.style.display = "block";
+
+})
+
 //funcion visualizar data en navegador//
 let pokemon = Object.values(data.pokemon);
 
@@ -57,10 +69,3 @@ window.addEventListener("load", visualizardata(pokemon))
 
 
 
-function OrderAZNames() {
-
-}
-let OrderNamesAZ = document.getElementById("Order NamesAZ");
-OrderNamesAZ.addEventListener("click", OrderAZNames);
-//let OrderNamesZA = document.getElementById("Order NamesZA");
-//OrderNamesAZ.addEventListener("click", OrderAZNames);

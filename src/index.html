@@ -9,14 +9,16 @@
 </head>
 
 <body>
-  <h1>Bienvenido</h1>
-  <button>Comenzar a Explorar</button>
-  <header>
-    <img src="img/Logo.png" alt="Logo de Pokemon">
+  <section id="Pag1">
+    <h1>Bienvenido</h1>
+    <p></p>
+    <button type="button" id="pantalla1">Explorar</button>
+  </section>
+  <section id="Pag2"> 
 
-  </header>
-
-
+    <header>
+      <img src="img/Logo.png" alt="Logo de Pokemon">
+    </header>
   <main>
     <div class="botones">
       <div class="orderselects">
@@ -25,27 +27,44 @@
           <option value= "NamesAZ" id="OrderNamesAZ">A-Z</option>
           <option value="NamesZA"id="OrderNamesZA">Z-A</option>
         </select>
+        </div>
+        <div class="typesSelect">
+          <select name="TypesPokemon" id="typesPokemon" placeholder="Tipos de Pokemones">
+            <option value="Tipos de pokemon">FILTRAR</option>
+            <option value="all">All pokemon</option>
+            <option value="grass">Grass</option>
+            <option value="water">Water</option>
+            <option value="fire">Fire</option>
+            <option value="poison">Poison</option>
+            <option value="bug">Bug</option>
+            <option value="normal">Normal</option>
+            <option value="electric">Electric</option>
+            <option value="ground">Ground</option>
+            <option value="fighting">Fighting</option>
+            <option value="psychic">Psychic</option>
+            <option value="ice">Ice</option>
+            <option value="dark">Dark</option>
+            <option value="rock">Rock</option>
+            <option value="steel">Steel</option>
+            <option value="fairy">Fairy</option>
+            <option value="dragon">Dragon</option>
+            <option value="flying">Flying</option>
+            <option value="ghost">Ghost</option>
+          </select>
+        </div>
+        <div class="damageSelect">
+          <select name="dañoPokemon" id="damagePokemon">
+            <option value="Daño de pokemones">CALCULAR</option>
+            <option value="Daño de pokemones">Pokemon capaz de hacer mayor daño</option>
+            <option value="Daño de pokemones"> Pokemon capaz de hacer menor daño</option>
+          </select>
+        </div>
       </div>
-      <div class="typesSelect">
-        <select name="TypesPokemon" id="typesPokemon" placeholder="Tipos de Pokemones">
-          <option value="Tipos de pokemon">FILTRAR</option>
-          <option value="Tipos de pokemon">Agua</option>
-          <option value="Tipos de pokemon">Aire</option>
-          <option value="Tipos de pokemon">Fuego</option>
-          <option value="Tipos de pokemon">Tierra</option>
-        </select>
-      </div>
-      <div class="damageSelect">
-        <select name="dañoPokemon" id="damagePokemon">
-          <option value="Daño de pokemones">CALCULAR</option>
-          <option value="Daño de pokemones">Pokemon capaz de hacer mayor daño</option>
-          <option value="Daño de pokemones"> Pokemon capaz de hacer menor daño</option>
-        </select>
-      </div>
-    </div>
-    <div class="contenedor"></div>
-  </main>
-  <script src="main.js" type="module"></script>
+      <div class="contenedor"></div>
+    </main>
+    
+  </section>
 </body>
+<script src="main.js" type="module"></script>
 
 </html>

@@ -132,3 +132,16 @@ header img {
 
     }
 }
+
+#Pag1 {
+
+    background-color: aquamarine;
+    text-align: center;
+    display: block;
+
+}
+
+#Pag2 {
+
+    display: none;
+}
