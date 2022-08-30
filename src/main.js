@@ -1,4 +1,4 @@
-import { orderdataAZ, orderdataZA, FilterDataWater } from './data.js'
+import { orderdataAZ, orderdataZA, FilterDataWater, pokemonBig } from './data.js'
 import data from './data/pokemon/pokemon.js';
 
 // Mostrar pantalla de inicio
@@ -16,7 +16,29 @@ buttonNavigation.addEventListener("click", () => {
 //funcion visualizar data en navegador//
 let pokemon = Object.values(data.pokemon);
 
+function visualizarpokemon(pokemon) {
 
+    let namepokemon = pokemon.name;
+    let imagenpokemon = pokemon.img;
+    let hightPokemon = "9.19 mts"
+    let weightPokemon = "400 kg"
+    let infopokemon = document.createElement("div");
+    infopokemon.className = "contenedorpokemon"
+    infopokemon.innerHTML =
+        `
+        <div class= "contenedorimagen"> 
+        <img class="imagen" src = "${imagenpokemon}">
+        </div>
+        <div class= "names"
+        <"${namepokemon}">
+        <p> ${namepokemon}</p>
+        <p> ${hightPokemon}</p>
+        <p> ${weightPokemon}</p>
+        </div>
+        `
+    let contenedor = document.querySelector(".contenedor")
+    contenedor.appendChild(infopokemon)
+}
 function visualizardata(pokemon) {
 
     for (let i = 0; i < pokemon.length; i++) {
@@ -37,8 +59,9 @@ function visualizardata(pokemon) {
         </div>
         `
     }
-
 }
+
+OrderNamesPokemon()
 //Funcion Ordenar data AZ-ZA//
 function OrderNamesPokemon() {
     let OrderNames = document.getElementById("orderPokemon");
@@ -59,7 +82,7 @@ function OrderNamesPokemon() {
         visualizardata(dataorganizada);
     });
 }
-OrderNamesPokemon()
+
 //funcion filtrarData//
 function FilterPokemon() {
     let selectW = document.getElementById("typesPokemon");
@@ -76,6 +99,19 @@ function FilterPokemon() {
     });
     //visualizardata(data.pokemon)
 
+
+
 }
 FilterPokemon()
+
+// Pokemon mas grande
+
+const curiosidades = document.getElementById("curiosidades")
+curiosidades.addEventListener("change", () => {
+    if (curiosidades.value === "biggest") {
+        document.querySelector(".contenedor").innerHTML = '';
+        visualizarpokemon(pokemonBig)
+    }
+
+})
 window.addEventListener("load", visualizardata(pokemon));

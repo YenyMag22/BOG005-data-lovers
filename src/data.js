@@ -1,3 +1,5 @@
+import pokemon from "./data/pokemon/pokemon.js";
+
 export const orderdataAZ = (data) => {
 
   let copydata = [...data]
@@ -50,3 +52,15 @@ export const FilterDataWater = (typesfilter, data) => {
 
 
 
+//Pokemon mas grande
+
+pokemon.pokemon.sort((pokea, pokeb) => {
+  if (pokea.size.height < pokeb.size.height) {
+    return 1;
+  }
+  return -1;
+
+})
+
+export const pokemonBig = pokemon.pokemon[0];
+console.log(pokemonBig);
