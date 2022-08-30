@@ -1,4 +1,4 @@
-import { orderdataAZ, orderdataZA } from './data.js'
+import { orderdataAZ, orderdataZA, pokemonBig } from './data.js'
 import data from './data/pokemon/pokemon.js';
 
 //Nuevo 26-08 Mostrar pantalla de inicio
@@ -16,7 +16,29 @@ buttonNavigation.addEventListener("click", () => {
 //funcion visualizar data en navegador//
 let pokemon = Object.values(data.pokemon);
 
+function visualizarpokemon(pokemon) {
 
+    let namepokemon = pokemon.name;
+    let imagenpokemon = pokemon.img;
+    let hightPokemon = "9.19 mts" 
+    let weightPokemon = "400 kg"
+    let infopokemon = document.createElement("div");
+    infopokemon.className = "contenedorpokemon"
+    infopokemon.innerHTML =
+        `
+        <div class= "contenedorimagen"> 
+        <img class="imagen" src = "${imagenpokemon}">
+        </div>
+        <div class= "names"
+        <"${namepokemon}">
+        <p> ${namepokemon}</p>
+        <p> ${hightPokemon}</p>
+        <p> ${weightPokemon}</p>
+        </div>
+        `
+    let contenedor = document.querySelector(".contenedor")
+    contenedor.appendChild(infopokemon)
+}
 function visualizardata(pokemon) {
 
     for (let i = 0; i < pokemon.length; i++) {
@@ -38,9 +60,10 @@ function visualizardata(pokemon) {
         `
     }
 
-    OrderNamesPokemon()
-
+   
 }
+
+ OrderNamesPokemon()
 //Funcion Ordenar data AZ-ZA//
 function OrderNamesPokemon() {
     let OrderNames = document.getElementById("orderPokemon");
@@ -61,11 +84,22 @@ function OrderNamesPokemon() {
         visualizardata(dataorganizada);
     });
 }
-//funcion Filtrar//
 
-//console.log ( pokemon.data)
-// console.log(orderdata(data.pokemon))
 window.addEventListener("load", visualizardata(pokemon))
+
+
+// Pokemon mas grande
+
+const curiosidades = document.getElementById("curiosidades")
+curiosidades.addEventListener("change", () => {
+    if (curiosidades.value === "biggest") {
+        document.querySelector(".contenedor").innerHTML = '';
+        visualizarpokemon(pokemonBig)
+    }
+
+})
+
+
 
 
 
