@@ -1,7 +1,7 @@
-import { orderdataAZ, orderdataZA } from './data.js'
+import { orderdataAZ, orderdataZA, FilterDataWater } from './data.js'
 import data from './data/pokemon/pokemon.js';
 
-//Nuevo 26-08 Mostrar pantalla de inicio
+// Mostrar pantalla de inicio
 
 const buttonNavigation = document.getElementById("pantalla1")
 
@@ -38,8 +38,6 @@ function visualizardata(pokemon) {
         `
     }
 
-    OrderNamesPokemon()
-
 }
 //Funcion Ordenar data AZ-ZA//
 function OrderNamesPokemon() {
@@ -61,11 +59,23 @@ function OrderNamesPokemon() {
         visualizardata(dataorganizada);
     });
 }
-//funcion Filtrar//
+OrderNamesPokemon()
+//funcion filtrarData//
+function FilterPokemon() {
+    let selectW = document.getElementById("typesPokemon");
+    selectW.addEventListener("change", (event) => {
+        let selectvalue = event.target.value;
+        if (selectvalue == "Tipos de pokemon") {
+            visualizardata(data.pokemon);
+        } else {
+            let arrayfilter = FilterDataWater(selectvalue, data.pokemon);
+            let contenedor = document.querySelector(".contenedor");
+            contenedor.innerHTML = ""
+            visualizardata(arrayfilter);
+        }
+    });
+    //visualizardata(data.pokemon)
 
-//console.log ( pokemon.data)
-// console.log(orderdata(data.pokemon))
-window.addEventListener("load", visualizardata(pokemon))
-
-
-
+}
+FilterPokemon()
+window.addEventListener("load", visualizardata(pokemon));
