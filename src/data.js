@@ -42,16 +42,6 @@ export const FilterDataWater = (typesfilter, data) => {
   return filterdata;
 }
 
-  
-
-
-
-
-
-
-
-
-
 //Pokemon mas grande
 
 pokemon.pokemon.sort((pokea, pokeb) => {
@@ -63,4 +53,4 @@ pokemon.pokemon.sort((pokea, pokeb) => {
 })
 
 export const pokemonBig = pokemon.pokemon[0];
-console.log(pokemonBig);
+// console.log(pokemonBig);

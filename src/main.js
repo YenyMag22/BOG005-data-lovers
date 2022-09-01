@@ -107,11 +107,10 @@ FilterPokemon()
 // Pokemon mas grande
 
 const curiosidades = document.getElementById("curiosidades")
-curiosidades.addEventListener("change", () => {
-    if (curiosidades.value === "biggest") {
-        document.querySelector(".contenedor").innerHTML = '';
-        visualizarpokemon(pokemonBig)
-    }
+curiosidades.addEventListener("click", () => {
+     document.querySelector(".contenedor").innerHTML = '';
+     visualizarpokemon(pokemonBig)
+
 
 })
 window.addEventListener("load", visualizardata(pokemon));
