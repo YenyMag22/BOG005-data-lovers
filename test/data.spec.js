@@ -30,7 +30,7 @@ describe('Funcion Ordenar AZ', () => {
   it('is a function', () => {
     expect(typeof orderdataAZ).toEqual('function');
   });
-  it.only('is a function', () => {
+  it ('is a function', () => {
     expect(orderdataAZ(dataEqual)).toEqual(dataEqual);
   });
 
