@@ -54,6 +54,18 @@ Definicion de terminado: se logra visualizar la data, existen los botones necesa
 
 Mobile
 
+
+![Vista Home Mobile](https://user-images.githubusercontent.com/108738816/188673423-8efc59d6-3d69-455e-97b3-f7784f74dbd2.png)![Vista Pag 2 Mobile](https://user-images.githubusercontent.com/108738816/188673480-c0f724dd-e03c-40ef-bf79-e4c7a9d30169.png)
+
+
+
 Tablet 
 
+![Vista Pag 2 Tablet](https://user-images.githubusercontent.com/108738816/188673709-6984e4d7-4e1f-46e9-bd98-102b31ff2605.png)
+
+
 Desktop
+
+
+![Vista Home Desktop](https://user-images.githubusercontent.com/108738816/188673583-f51f30cc-fa26-497c-bde6-ff77bb83da08.png)![Vista Pag 2 Desktop](https://user-images.githubusercontent.com/108738816/188673633-60d5ef68-6c3d-4cc5-87f9-bf1fed79335e.png)
+
