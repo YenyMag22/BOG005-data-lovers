@@ -40,7 +40,7 @@ Definicion de terminado: se logra visualizar la data, existen los botones necesa
 
 2. Al ingresar a la web se veia directamente la información de la misma sin ningun contexto. Para solucionar esto, se agrego una vista de Bienvenida a la página. 
 
-3. Para la parte de la curiosidad se cambio un select por un boton ya que no habian mas opciones disponibles en esta área.
+3. Para la opción de dato curioso se cambio el select por un boton puesto que no habian mas opciones que desplegar en esta área.
 
 4. Color negro de fondo de la web. Resultaba pesado para la vista de algunos usuarios por lo cual se decidio cambiar de color negro a un degrade en tonos amarillos.
 

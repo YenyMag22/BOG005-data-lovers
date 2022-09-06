@@ -81,7 +81,12 @@ let datatest2 = [
   {
     "name": "venusaur",
     "img": "https://www.serebii.net/pokemongo/pokemon/003.png",
-  }
+  },
+
+  {
+    "name": "ivysaur",
+    "img": "https://www.serebii.net/pokemongo/pokemon/002.png",
+  },
 ]
 describe('Funcion Ordenar ZA', () => {
   it('is a function', () => {
@@ -100,6 +105,11 @@ describe('Funcion Ordenar ZA', () => {
       },
 
       {
+        "name": "ivysaur",
+        "img": "https://www.serebii.net/pokemongo/pokemon/002.png",
+      },
+
+      {
         "name": "charmeleon",
         "img": "https://www.serebii.net/pokemongo/pokemon/005.png",
       },
@@ -107,7 +117,8 @@ describe('Funcion Ordenar ZA', () => {
       {
         "name": "bulbasaur",
         "img": "https://www.serebii.net/pokemongo/pokemon/001.png",
-      }
+      },
+
     ]
     expect(orderdataZA(datatest2)).toEqual(resultZA);
   });
@@ -151,18 +162,10 @@ describe('FilterDataWater', () => {
         ],
       },
 
-      {
-        "name": "pidgeotto",
-        "img": "https://www.serebii.net/pokemongo/pokemon/017.png",
-        "type": [
-          "normal",
-          "flying"
-        ],
-      }
     ]
 
 
-      expect(FilterDataWater(dataTestFilter)).toBe(resultFilter);
+      expect(FilterDataWater("poison", dataTestFilter)).toEqual(resultFilter);
   });
 });
 
@@ -194,7 +197,7 @@ let dataTestCalculator = [
 
     it('con un argumento de array de datos que tenga data desordenada, returns array de data por su tamaño de mas grande a mas pequeño', () => {
 
-      const resultCalculator = [
+      const resultCalculator = 
         {
           "name": "ivysaur",
           "img": "https://www.serebii.net/pokemongo/pokemon/002.png",
@@ -202,16 +205,9 @@ let dataTestCalculator = [
             "height": "0.99 m",
             "weight": "13.0 kg"
           },
-        },
-        {
-          "name": "bulbasaur",
-          "img": "https://www.serebii.net/pokemongo/pokemon/001.png",
-          "size": {
-            "height": "0.71 m",
-            "weight": "6.9 kg"
-          },
-        },
-      ]
+        }
+   
+      
 
         expect(calculatorPoke(dataTestCalculator)).toEqual(resultCalculator);
     });

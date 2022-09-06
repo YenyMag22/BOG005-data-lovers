@@ -53,7 +53,7 @@ export function calculatorPoke(pokemones) {
     return -1;
 
   })
-  console.log(pokecopy[0]);
+  //console.log(pokecopy[0]);
   
   return pokecopy[0];
   
