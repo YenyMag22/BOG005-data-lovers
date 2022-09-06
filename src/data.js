@@ -33,13 +33,13 @@ export const orderdataZA = (data) => {
   return copydata
 };
 //funcion Filtrar data//
-export const FilterDataWater = (typesfilter, data) => {
-  const filterdata = data.filter(function (dataPokemon) {
+export const filterData = (typesfilter, data) => {
+  const filterData = data.filter(function (dataPokemon) {
     // return dataPokemon.type == "water"
     return (dataPokemon.type).includes(typesfilter)
   })
   //console.log(filterdata)
-  return filterdata;
+  return filterData;
 }
 
 //Pokemon mas grande

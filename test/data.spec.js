@@ -1,4 +1,4 @@
-import { orderdataAZ, orderdataZA, FilterDataWater, calculatorPoke } from '../src/data.js';
+import { orderdataAZ, orderdataZA, filterData, calculatorPoke } from '../src/data.js';
 let dataprueba = [{
   "name": "bulbasaur",
   "img": "https://www.serebii.net/pokemongo/pokemon/001.png",
@@ -147,9 +147,9 @@ let dataTestFilter = [
       }
     ]
 
-describe('FilterDataWater', () => {
+describe('filterData', () => {
   it('is a function', () => {
-    expect(typeof FilterDataWater).toBe('function');
+    expect(typeof filterData).toBe('function');
   });
 
   it('con un argumento de array de datos que tenga type, returns array de data por su tipo', () => {
@@ -167,7 +167,7 @@ describe('FilterDataWater', () => {
     ]
 
 
-      expect(FilterDataWater("poison", dataTestFilter)).toEqual(resultFilter);
+      expect(filterData("poison", dataTestFilter)).toEqual(resultFilter);
   });
 });
 
