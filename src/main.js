@@ -66,7 +66,7 @@ OrderNamesPokemon()
 function OrderNamesPokemon() {
     let OrderNames = document.getElementById("orderPokemon");
     OrderNames.addEventListener("change", () => {
-        console.log(OrderNames.value);
+        //console.log(OrderNames.value);
         let dataorganizada
         let OrderValue = OrderNames.value
         if (OrderValue == "NamesAZ") {
