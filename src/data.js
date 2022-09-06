@@ -34,23 +34,29 @@ export const orderdataZA = (data) => {
 };
 //funcion Filtrar data//
 export const FilterDataWater = (typesfilter, data) => {
-  const filterdata = data.filter(function(dataPokemon) {
+  const filterdata = data.filter(function (dataPokemon) {
     // return dataPokemon.type == "water"
-    return (dataPokemon.type).includes(typesfilter) 
+    return (dataPokemon.type).includes(typesfilter)
   })
-  console.log(filterdata)
+  //console.log(filterdata)
   return filterdata;
 }
 
 //Pokemon mas grande
 
-pokemon.pokemon.sort((pokea, pokeb) => {
-  if (pokea.size.height < pokeb.size.height) {
-    return 1;
-  }
-  return -1;
+export function calculatorPoke(pokemones) {
+  const pokecopy = [...pokemones]
+  pokecopy.sort((pokea, pokeb) => {
+    if (pokea.size.height < pokeb.size.height) {
+      return 1;
+    }
+    return -1;
 
-})
-
-export const pokemonBig = pokemon.pokemon[0];
+  })
+  console.log(pokecopy[0]);
+  
+  return pokecopy[0];
+  
+}
+export const pokemonBig = calculatorPoke(pokemon.pokemon)
 // console.log(pokemonBig);
