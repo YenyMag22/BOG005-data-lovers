@@ -5,7 +5,7 @@
 }
 
 main {
-    background-color:white;
+    background-color: white;
 
 }
 
@@ -38,10 +38,10 @@ main {
 }
 
 .names {
-    color:rgb(10, 10, 10);
+    color: rgb(10, 10, 10);
     font-size: 2.5rem;
     font-weight: 400;
-    
+
 }
 
 .names::first-letter {
@@ -76,7 +76,7 @@ header img {
 
 .contenedorimagen {
     background-color: rgb(235, 248, 163);
-    border: rgb(228, 255, 24) solid 2px; 
+    border: rgb(228, 255, 24) solid 2px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -180,33 +180,27 @@ h1 {
 
 
     #Pag1 img {
-       width: 70%;
-    
+        width: 70%;
+
     }
 
     #texto-intro {
 
-        width: 80%;  
-        font-size:x-large;
-    }
-
-    h1{
-        font-size:xx-large;
         width: 80%;
-        height:20% ;
+        font-size: x-large;
     }
 
-    #pantalla1{
+    h1 {
+        font-size: xx-large;
+        width: 80%;
+        height: 20%;
+    }
+
+    #pantalla1 {
         width: 60%;
-        font-size: xx-large; 
+        font-size: xx-large;
 
     }
-
-
-
- 
-
-
 
 }
 
