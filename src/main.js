@@ -1,4 +1,4 @@
-import { orderdataAZ, orderdataZA, FilterDataWater, pokemonBig } from './data.js'
+import { orderdataAZ, orderdataZA, filterData, pokemonBig } from './data.js'
 import data from './data/pokemon/pokemon.js';
 
 // Mostrar pantalla de inicio
@@ -91,7 +91,7 @@ function FilterPokemon() {
         if (selectvalue == "Tipos de pokemon") {
             visualizardata(data.pokemon);
         } else {
-            let arrayfilter = FilterDataWater(selectvalue, data.pokemon);
+            let arrayfilter = filterData(selectvalue, data.pokemon);
             let contenedor = document.querySelector(".contenedor");
             contenedor.innerHTML = ""
             visualizardata(arrayfilter);

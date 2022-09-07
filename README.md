@@ -50,8 +50,16 @@ Definicion de terminado: se logra visualizar la data, existen los botones necesa
 ## 4. Prototipo de baja fidelidad
 
 
-## 5. Prototipo de alta fidelidad
+![Prototipo de baja fidelidad](https://user-images.githubusercontent.com/108738816/188705405-2e4d14b7-0b19-4490-9df5-23eade596104.jpg)
 
+
+## 5. Prototipo de alta fidelidad en figma
+
+
+![Prototipo de alta fidelidad en figma](https://user-images.githubusercontent.com/108738816/188705930-c75bab4b-166a-43af-9f0d-5704616fdad5.png)
+
+
+## 6. Vista final de la Página POKEMON LOVERS en los diferentes dispositivos
 Mobile
 
 
@@ -61,6 +69,7 @@ Mobile
 
 Tablet 
 
+![Vista Home tablet](https://user-images.githubusercontent.com/108738816/188770859-1c3af66e-2e86-45f0-a715-6450d4cd1786.png)
 ![Vista Pag 2 Tablet](https://user-images.githubusercontent.com/108738816/188673709-6984e4d7-4e1f-46e9-bd98-102b31ff2605.png)
 
 
