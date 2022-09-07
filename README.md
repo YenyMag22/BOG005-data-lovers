@@ -69,6 +69,7 @@ Mobile
 
 Tablet 
 
+![Vista Home tablet](https://user-images.githubusercontent.com/108738816/188770859-1c3af66e-2e86-45f0-a715-6450d4cd1786.png)
 ![Vista Pag 2 Tablet](https://user-images.githubusercontent.com/108738816/188673709-6984e4d7-4e1f-46e9-bd98-102b31ff2605.png)
 
 
